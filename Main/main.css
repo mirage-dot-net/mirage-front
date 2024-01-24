@@ -1,0 +1,420 @@
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('fonts/gothampro_medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('fonts/gothampro_mediumitalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('fonts/gothampro_bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    background-color: #000000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Gotham Pro', italic;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    max-width: 140px;
+}
+.left-section span {
+    font-size: 18px; 
+}
+
+.logo-button,
+.discord-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo-img{
+    height: 30px;
+    margin-right: 8px;
+}
+
+
+.discord-img {
+    height: 50px;
+}
+
+.main-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1; 
+    max-width: 300px;
+    
+}
+
+.main-navigation a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.main-navigation a:hover {
+    background-color: #b69322ef;
+    color: #000;
+    border: 2px solid #fff;
+    border-radius: 4px;
+}
+
+.login-button {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #b69322ef;
+    color: #000;
+    border: 2px solid #fff;
+    border-radius: 4px;
+}
+
+.mirage-button-combined {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 3px solid #FFD97E;
+    background: var(--PTA, linear-gradient(261deg, #E3953F 0%, #000 100%));
+    padding: 5px 10px;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-top: 0;
+    width: 20%;
+    text-decoration: none;
+}
+
+.mirage-button-combined:hover {
+    background: linear-gradient(to right, #000, #e6c300);
+    border-color: #aa9a3f;
+}
+
+.mirage-button-combined {
+    text-align: center;
+}
+
+.logo-button {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px; 
+    height: 40px;
+    border-radius: 15px;
+    border: 3px solid #FFD97E;
+    background: var(--PTA, linear-gradient(261deg, #E3953F 0%, #000 100%));
+    transition: all 0.3s ease;
+
+}
+
+.logo-button:hover {
+    background: linear-gradient(to right, #000, #e6c300);
+    border-color: #aa9a3f;
+}
+
+.mirage-title-wrapper {
+    position: relative; 
+}
+
+.mirage-title-wrapper::before {
+    content: ''; 
+    position: absolute; 
+    bottom: -80px; 
+    left: 24%; 
+    width: 50%; 
+    height: 5px; 
+    background: linear-gradient(to left, #000, #b69322ef); 
+}
+
+
+
+
+
+.center-text {
+    text-align: center;
+    font-family: 'Gotham Pro', normal;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+.center-text.hide-animation {
+    opacity: 0;
+    transform: translateY(-100px);
+}
+
+
+.center-text h1 {
+    color: #fff;
+    font-size: 260px;
+    letter-spacing: -30px;
+    margin-bottom: 20px; 
+}
+
+.center-text a {
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+}
+
+
+#logo-text {
+    position: absolute; 
+    top: 55%; 
+    left: 33%; 
+    transform: translate(-50%, -50%); 
+    z-index: 0;
+    max-width: 150px;
+    color: rgb(227, 149, 63);
+}
+/* Здесь я делал дальше */
+/* Здесь я делал дальше */
+/* Здесь я делал дальше */
+/* Здесь я делал дальше */
+/* Здесь я делал дальше */
+
+.center-text::after {
+    content: ''; 
+    position: absolute; 
+    bottom: 0; 
+    left: 170px; 
+    top: 450px; 
+    width: 60%; 
+    height: 5px; 
+    background: linear-gradient(to left, #000, #E3953F); 
+}
+
+
+
+.start-button .mirage-button-combined {
+    width: 200px; 
+}
+
+
+
+.start-button {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    right: 2%;
+    width: 340px; 
+    height: 55px; 
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 3px solid #FFD97E;
+    background: var(--PTA, linear-gradient(261deg, #E3953F 0%, #000 100%));
+    transition: all 0.3s ease;
+    position: relative; 
+    white-space: nowrap; 
+    box-shadow: 0 0 40px rgba(227, 149, 63, 0.8);
+}
+
+.start-button:hover {
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(230, 195, 0));
+    border-color: rgb(170, 154, 63);
+}
+
+
+.start-button::before {
+    content: '';
+    margin-right: 10px;
+    position: absolute;
+    height: 100%;
+    width: 4px; 
+    background-color: rgb(255, 217, 126); 
+    left: calc(23% - 5px); 
+    top: 0;
+    transition: background-color 0.3s ease; 
+}
+
+
+.start-button:hover::before {
+    background-color: #aa9a3f; 
+}
+
+
+.start-button span {
+    margin-left: 20px; 
+}
+
+.start-button .logo-img {
+    height: 40px; 
+    margin-right: 20px; 
+}
+
+
+.online-users {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-left: 20px; 
+    color: #fff; 
+}
+
+.online-text {
+    font-family: 'Gotham Pro', normal;
+    font-size: 16px; 
+    margin-top: -4px; 
+}
+
+
+.online-count {
+    font-size: 50px; 
+    color: transparent;
+    background: linear-gradient(261deg, #E3953F 0%, #000 100%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    animation: increaseCount 2s infinite alternate; 
+}
+
+
+
+
+
+
+
+
+.servers h1 {
+    margin-top: 500px;
+    color: rgb(255, 255, 255);
+    font-family: 'Gotham Pro', normal;
+    margin-bottom: 150px;
+    text-align: center;
+    
+    
+
+}
+
+.server-info {
+
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-top: 15px;
+    font-family: 'Gotham Pro', normal;
+    
+}
+
+
+.server-cards-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+.server-card {
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 3px solid #FFD97E;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    color: rgb(255, 255, 255);
+    margin: 0 40px;
+    height: 260px; 
+    margin-bottom: 20px; 
+}
+
+
+.arrow {
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-arrow {
+    left: 0; /* Расположение слева от контейнера */
+}
+
+.right-arrow {
+    right: 0; /* Расположение справа от контейнера */
+}
+.server-card img.server-logo {
+    max-width: 40px; 
+    height: auto;
+    margin-right: 10px; 
+}
+.server-card .server-info h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.server-card p {
+    font-size: 16px;
+}
+
+.server-card .more-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #E3953F;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.server-card .more-button:hover {
+    background-color: #aa9a3f;
+}
+
+.server-card:hover {
+    transform: scale(1.05);
+}
+
+
+.central-card {
+    position: relative;
+}
